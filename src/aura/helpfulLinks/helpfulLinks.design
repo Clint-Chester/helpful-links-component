@@ -1,0 +1,10 @@
+<design:component label="Helpful Links">
+    <design:attribute name="navigateOption" required="true" label="Navigation Options" datasource="URL,Salesforce Content,SObject Record" default="URL" description="Used to control whether your links are to hosted Salesforce Content, generic URLs or SObject records." />
+    <design:attribute name="chainLists" label="Chain Lists" description="If you are looking to combine lists of URLs and Salesforce content, enable this to chain the list." />
+    <design:attribute name="showTitle" label="Show Title" description="Used for when you want to give your list a title. If you want to join lists then set to false." />
+    <design:attribute name="cmpTitle" required="true" label="Title" description="Title that is used on the heading of the component." />
+	<design:attribute name="linkIcons" required="true" label="Link Icons" description="The Lightning Design System name of the icon. Names are written in the format '\utility:down\' where 'utility' is the category, and 'down' is the specific icon to be displayed. Icons can be found here - https://lightningdesignsystem.com/icons/"/>
+    <design:attribute name="linkTitles" required="true" label="Link Titles" description="The title you want displayed. For multiple links separate the titles with a comma e.g. 'Title 1, Title 2'"/>
+    <design:attribute name="linkUrls" required="true" label="Link URLs or Record IDs" description="The URL you want displayed. For multiple links separate the urls with a comma e.g. '/dashboard, /file'. If you are displaying Salesforce Content or SObject Records, use Record IDs instead of URLs."/>
+    <design:attribute name="linkDescription" required="true" label="Link Descriptions" description="The description you want displayed. For multiple links separate the descriptions with a comma e.g. 'Description 1, Description 2'"/>
+</design:component>
