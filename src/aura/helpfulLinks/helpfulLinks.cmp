@@ -13,12 +13,12 @@
     <aura:attribute type="Boolean" name="errorOccurred" default="false" description="Used to identify if there is an error because all the link items weren't filled out."/>
     
     <!--Component-->
-    <div class="slds-grid slds-wrap" aura:id="linksContainer">
+    <div class="slds-grid slds-wrap slds-color__background_gray-1 slds-box" aura:id="linksContainer">
         <aura:if isTrue="{!v.errorOccurred}">
             <p>Please ensure that when you fill out the icons, titles, urls and descriptions that they all have the same amount of commas.</p>
             <aura:set attribute="else">
                 <aura:if isTrue="{!v.showTitle}">
-                    <div class="slds-p-horizontal_medium slds-p-vertical_large slds-size_1-of-1">
+                    <div class="slds-p-bottom_small slds-size_1-of-1">
                         <h2 class="slds-text-heading--small">{!v.cmpTitle}</h2>
                     </div>
                 </aura:if>
