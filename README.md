@@ -1,10 +1,7 @@
 # Helpful Links Component
 A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages. I initially made this for my cricket club's Salesforce instance to help our users in finding contextual content in Salesforce and thought it would be useful to share!
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=Clint-Chester&repo=sfdc-helpfullinks&ref=master">
-  <img alt="Deploy to Salesforce"
-       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
-</a>
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
 
 <h2>Features</h2>
 The three types of content that can be populated in this component are:
