@@ -22,14 +22,14 @@ The three types of content that can be populated in this component are:
 <h2>How to use this component</h2>
 <p>There are some key points that need to be considered when populating content for this component:</p>
 <ul>
-  <li>For creating items in the links list, each item is created by separating each thing with a comma. e.g. Link 1,Link 2 will result in creating two items being displayed in the links list. It is essential that Link Icons, Link Titles, Link URLs or Record IDs and Link Descriptions are all the same length.</li>
-  <li>If you are not wanting to add descriptions for your links as an example just leave blank spaces e.g. , ,</li>
+  <li>For creating items in the links list, each item is created by separating each thing with a semicolon. e.g. Link 1;Link 2 will result in creating two items being displayed in the links list. It is essential that Link Icons, Link Titles, Link URLs or Record IDs and Link Descriptions are all the same length.</li>
+  <li>If you are not wanting to add descriptions for your links as an example just leave blank spaces e.g. ; ;</li>
 </ul>
 <p>The following lists out the steps involved when filling in content for this component via Lightning App Builder:</p>
 <ol>
   <li>Title - Complete the title field if you are showing a title for this helpful links component</li>
-  <li>Link Icons - The icons for each item in the list are inheritied from Salesforce's Lightning Design System. The Lightning Design System name of the icon is used for each item in the list. Names are written in the format 'utility:down' where 'utility' is the category, and 'down' is the specific icon to be displayed. All icons available can be found <a href="https://lightningdesignsystem.com/icons/" target="_blank">here</a>. For each icon in the list they must be separated by a comma.</li>
-  <li>Link Titles - The clickable element that will be displayed for the users. For each link title in the list they must be separated by a comma.</li>
-  <li>Link URLs or Record IDs - If the Salesforce Content Links checkbox is enabled, enter each record id of the file separated by a comma. If this checkbox isn't enabled, enter the URL for each item in the list separated by a comma.</li>
-  <li>Link Description - The description that is dsiplayed underneath the link title. Each description must be separated by a comma for each item in the list. If you don't want to add a description add commas with blank spaces e.g. , ,</li>
+  <li>Link Icons - The icons for each item in the list are inheritied from Salesforce's Lightning Design System. The Lightning Design System name of the icon is used for each item in the list. Names are written in the format 'utility:down' where 'utility' is the category, and 'down' is the specific icon to be displayed. All icons available can be found <a href="https://lightningdesignsystem.com/icons/" target="_blank">here</a>. For each icon in the list they must be separated by a semicolon.</li>
+  <li>Link Titles - The clickable element that will be displayed for the users. For each link title in the list they must be separated by a semicolon.</li>
+  <li>Link URLs or Record IDs - If the Salesforce Content Links checkbox is enabled, enter each record id of the file separated by a semicolon. If this checkbox isn't enabled, enter the URL for each item in the list separated by a semicolon.</li>
+  <li>Link Description - The description that is dsiplayed underneath the link title. Each description must be separated by a semicolon for each item in the list. If you don't want to add a description add semicolons with blank spaces e.g. ; ;</li>
 </ol>
