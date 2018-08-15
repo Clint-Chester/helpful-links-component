@@ -1,4 +1,7 @@
 # Helpful Links Component
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92e2923287564584bd216d591d10440e)](https://www.codacy.com/project/Clint-Chester/sfdc-helpfullinks/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Clint-Chester/sfdc-helpfullinks&amp;utm_campaign=Badge_Grade_Dashboard)
+
 A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages. I initially made this for my cricket club's Salesforce instance to help our users in finding contextual content in Salesforce and thought it would be useful to share!
 
 [![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
