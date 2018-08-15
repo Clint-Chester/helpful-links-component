@@ -16,10 +16,10 @@
             var helpfulLinks = cmp.get("v.helpfulLinks");
             for(var i=0; i<linkIcons.length; i+=1){
                 helpfulLinks.push({
-                    'icon':linkIcons[i],
-                    'title': linkTitles[i],
-                    'url': linkUrls[i],
-                    'description': linkDescription[i]
+                    "icon" : linkIcons[i],
+                    "title" : linkTitles[i],
+                    "url" : linkUrls[i],
+                    "description" : linkDescription[i]
                 });
             }
             cmp.set("v.helpfulLinks", helpfulLinks);
@@ -31,18 +31,18 @@
     previewFile : function(cmp, event) {
         var helpfulLinks = cmp.get("v.helpfulLinks");
         switch(cmp.get("v.navigateOption")) {
-            case 'URL':
-                $A.get('e.force:navigateToURL').fire({
+            case "URL":
+                $A.get("e.force:navigateToURL").fire({
                     url: helpfulLinks[event.target.dataset.recordcount].url
                 });
                 break;
-            case 'Salesforce Content':
-                $A.get('e.lightning:openFiles').fire({
+            case "Salesforce Content":
+                $A.get("e.lightning:openFiles").fire({
                     recordIds: [helpfulLinks[event.target.dataset.recordcount].url]
                 });
                 break;
-            case 'SObject Record':
-                $A.get('e.force:navigateToSObject').fire({
+            case "SObject Record":
+                $A.get("e.force:navigateToSObject").fire({
                     recordId: helpfulLinks[event.target.dataset.recordcount].url
                 });
                 break;
