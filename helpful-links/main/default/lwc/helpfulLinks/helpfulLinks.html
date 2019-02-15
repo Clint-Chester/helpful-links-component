@@ -1,0 +1,30 @@
+<template>
+    <div class="slds-grid slds-wrap slds-color__background_gray-1 slds-box">
+        <div class="slds-p-bottom_small slds-size_1-of-1">
+            <h2 class="slds-text-heading_small font-bold">{title}</h2>
+        </div>
+        <div class="slds-size_1-of-1">
+            <ul class="slds-has-dividers_bottom-space">
+                <template for:each={links} for:item="link" for:index="linkCount">
+                    <li class="slds-item" key={link.title}>
+                        <div class="slds-tile slds-media">
+                            <div class="slds-media__figure">
+                                <lightning-icon icon-name={link.icon}></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h3 class="slds-truncate" title={link.title}>
+                                    <a href="javascript:void(0);" data-recordcount={linkCount}>{link.title}</a>
+                                </h3>
+                                <div class="slds-tile__detail slds-text-body_small">
+                                    <ul class="slds-list_horizontal slds-has-dividers_right">
+                                        <li class="slds-item">{link.description}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>
