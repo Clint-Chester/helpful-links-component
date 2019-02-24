@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="helpfulLinks">
+    <apiVersion>45.0</apiVersion>
+    <description>Used to create a configurable links list to open URLs, Salesforce Files and Salesforce Records.</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Helpful Links</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+            <property name="title" label="Title" type="String" required="true" default="Helpful Links" description="The main title that will be displayed for the list of links." />
+            <property name="navigationOptions" label="Navigation Options" type="String" required="true" datasource="URL,Salesforce File,Record Page" default="URL" description="Used to control whether your links are to hosted Salesforce Content, generic URLs or SObject records."/>
+            <property name="linkIcons" label="Link Icons" type="String" required="true" default="doctype:pdf;doctype:flash" description="The Lightning Design System name of the icon. Names are written in the format '\utility:down\' where 'utility' is the category, and 'down' is the specific icon to be displayed. Icons can be found here - https://lightningdesignsystem.com/icons/"/>
+            <property name="linkTitles" label="Link Titles" type="String" required="true" default="Sample Title;Sample Title" description="The title you want displayed. For multiple links separate the titles with a semicolon e.g. 'Title 1;Title 2'"/>
+            <property name="linkUrlsOrIds" label="Link URLs or Record IDs" type="String" required="true" default="/;/" description="Used to hold either the URLs or Record IDs." />
+            <property name="linkDescriptions" label="Link Descriptions" type="String" required="true" default="Sample Description;Sample Description" description="The description you want displayed. For multiple links separate the descriptions with a semicolon e.g. 'Description 1;Description 2'"/>
+            <property name="showTitle" label="Show Title" type="Boolean" default="true" description="Title that is used on the heading of the component."/>
+            <property name="chainLists" label="Chain Lists" type="Boolean" default="false" description="If you are looking to combine lists of URLs and Salesforce content, enable this to chain the list."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
