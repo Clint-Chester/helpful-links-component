@@ -1,4 +1,4 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
 
 export default class HelpfulLinks extends NavigationMixin(LightningElement) {
@@ -38,12 +38,13 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
         this._linkDescriptions = value.split(";");
     }
 
+    //Holds the constructed links to be rendered. Needs to be tracked for the URL display to work.
+    @track
+    links = [];
+
     //Used to return an error back to the user
     errorOccurred = false;
     errorMessage = '';
-    
-    //Holds the constructed links to be rendered and sets up the link settings
-    links = [];
 
     renderedCallback() {
         //With the DOM being rendered, check whether the lists should be chained
@@ -58,12 +59,11 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
             //Set the links
             for(let i = 0; i < this._linkSettingsCount; i++) {
                 let pageRef = this.constructPageRef(this.linkUrlsOrIds.shift());
-                let pageUrl = this[NavigationMixin.GenerateUrl](pageRef).then(url => {pageUrl = url;});
                 this.links.push({
                     "icon" : this.linkIcons.shift(),
                     "title" : this.linkTitles.shift(),
                     "location" : pageRef,
-                    "url" : pageUrl,
+                    "url" : this[NavigationMixin.GenerateUrl](pageRef).then(url => {this.links[i].url = url;}),
                     "description" : this.linkDescriptions.shift()
                 });
             }
@@ -76,11 +76,11 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
     }
 
     navigateToTarget(event) {
-        // Stop the event's default behavior.
-        // Stop the event from bubbling up in the DOM.
+        //Stop the event's default behavior.
         event.preventDefault();
+        //Stop the event from bubbling up in the DOM.
         event.stopPropagation();
-        // Navigate to the record page.
+        //Navigate to the record page.
         this[NavigationMixin.Navigate](this.links[event.target.dataset.recordcount].location);
     }
 
