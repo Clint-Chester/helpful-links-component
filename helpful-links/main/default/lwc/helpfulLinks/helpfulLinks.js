@@ -58,11 +58,12 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
             //Set the links
             for(let i = 0; i < this._linkSettingsCount; i++) {
                 let pageRef = this.constructPageRef(this.linkUrlsOrIds.shift());
+                let pageUrl = this[NavigationMixin.GenerateUrl](pageRef).then(url => {pageUrl = url;});
                 this.links.push({
                     "icon" : this.linkIcons.shift(),
                     "title" : this.linkTitles.shift(),
                     "location" : pageRef,
-                    "url" : this[NavigationMixin.GenerateUrl](pageRef),
+                    "url" : pageUrl,
                     "description" : this.linkDescriptions.shift()
                 });
             }
@@ -92,7 +93,7 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
                         url: urlOrId
                     }
                 };
-            case "Salesforce Content":
+            case "Salesforce File":
                 return {
                     type: 'standard__namedPage',
                     attributes: {
@@ -102,9 +103,9 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
                         recordIds: urlOrId
                     }
                 };
-            case "SObject Record":
+            case "Record Page":
                 return {
-                    type: 'standard_recordPage',
+                    type: 'standard__recordPage',
                     attributes: {
                         recordId: urlOrId,
                         actionName: 'view'

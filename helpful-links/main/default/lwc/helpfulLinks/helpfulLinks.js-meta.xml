@@ -12,7 +12,7 @@
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
             <property name="title" label="Title" type="String" required="true" default="Helpful Links" description="The main title that will be displayed for the list of links." />
-            <property name="navigationOptions" label="Navigation Options" type="String" required="true" datasource="URL,Salesforce Content,SObject Record" default="URL" description="Used to control whether your links are to hosted Salesforce Content, generic URLs or SObject records."/>
+            <property name="navigationOptions" label="Navigation Options" type="String" required="true" datasource="URL,Salesforce File,Record Page" default="URL" description="Used to control whether your links are to hosted Salesforce Content, generic URLs or SObject records."/>
             <property name="linkIcons" label="Link Icons" type="String" required="true" default="doctype:pdf;doctype:flash" description="The Lightning Design System name of the icon. Names are written in the format '\utility:down\' where 'utility' is the category, and 'down' is the specific icon to be displayed. Icons can be found here - https://lightningdesignsystem.com/icons/"/>
             <property name="linkTitles" label="Link Titles" type="String" required="true" default="Sample Title;Sample Title" description="The title you want displayed. For multiple links separate the titles with a semicolon e.g. 'Title 1;Title 2'"/>
             <property name="linkUrlsOrIds" label="Link URLs or Record IDs" type="String" required="true" default="/;/" description="Used to hold either the URLs or Record IDs." />
