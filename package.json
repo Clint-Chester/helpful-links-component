@@ -6,7 +6,8 @@
   "scripts": {
     "test:unit": "lwc-jest",
     "test:unit:watch": "lwc-jest --watch",
-    "test:unit:debug": "lwc-jest --debug"
+    "test:unit:debug": "lwc-jest --debug",
+    "test:unit:coverage": "lwc-jest --coverage"
   },
   "repository": {
     "type": "git",

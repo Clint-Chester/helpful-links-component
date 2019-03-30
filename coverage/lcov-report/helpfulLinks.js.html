@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for helpfulLinks.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> helpfulLinks.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">79.31% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>23/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>14/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">79.31% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/29</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { LightningElement, api, track } from 'lwc';
+import { NavigationMixin } from 'lightning/navigation';
+&nbsp;
+export default class HelpfulLinks extends NavigationMixin(LightningElement) {
+    //All of the settings that can be defined for the component
+    @api title;
+    @api navigationOptions;
+    @api showTitle;
+    @api chainLists;
+    @api
+    get linkIcons() {
+        return this._linkIcons;
+    }
+    set linkIcons(value) {
+        this._linkIcons = value.split(";");
+        //Use this value to compare the lengths across all other settings
+        this._linkSettingsCount = this._linkIcons.length;
+    }
+    @api
+    get linkTitles() {
+        return this._linkTitles;
+    }
+    set linkTitles(value) {
+        this._linkTitles = value.split(";");
+    }
+    @api
+    get linkUrlsOrIds() {
+        return this._linkUrlsOrIds;
+    }
+    set linkUrlsOrIds(value) {
+        this._linkUrlsOrIds = value.split(";");
+    }
+    @api
+    get linkDescriptions() {
+        return this._linkDescriptions;
+    }
+    set linkDescriptions(value) {
+        this._linkDescriptions = value.split(";");
+    }
+&nbsp;
+    //Holds the constructed links to be rendered. Needs to be tracked for the URL display to work.
+    @track
+    links = [];
+&nbsp;
+    //Used to return an error back to the user
+    errorOccurred = false;
+    errorMessage = '';
+&nbsp;
+    renderedCallback() {
+        //With the DOM being rendered, check whether the lists should be chained
+        if(this.chainLists) {
+            this.template.querySelector('div[data-id=linksList]').className = this.template.querySelector('div[data-id=linksList]').className + ' pull-up-margin';
+        }
+    }
+&nbsp;
+    connectedCallback() {
+        //Check that all the link settings are the same length
+        if([this.linkIcons, this.linkTitles, this.linkUrlsOrIds, this.linkDescriptions].every(this.linkLengthSettingsMatch, this)) {
+            //Set the links
+            for(let i = 0; i &lt; this._linkSettingsCount; i++) {
+                let pageRef = this.constructPageRef(this.linkUrlsOrIds.shift());
+                this.links.push({
+                    "icon" : this.linkIcons.shift(),
+                    "title" : this.linkTitles.shift(),
+                    "location" : pageRef,
+                    "url" : this[NavigationMixin.GenerateUrl](pageRef).then(url =&gt; {this.links[i].url = url;}),
+                    "description" : this.linkDescriptions.shift()
+                });
+            }
+        }
+        else {
+            //Set the error
+            this.errorOccurred = true;
+            this.errorMessage = 'Please ensure that when you fill out the icons, titles, urls and descriptions that they all have the same amount of semi colons.';
+        }
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    navigateToTarget</span>(event) {
+        //Stop the event's default behavior.
+<span class="cstat-no" title="statement not covered" >        event.preventDefault();</span>
+        //Stop the event from bubbling up in the DOM.
+<span class="cstat-no" title="statement not covered" >        event.stopPropagation();</span>
+        //Navigate to the record page.
+<span class="cstat-no" title="statement not covered" >        this[NavigationMixin.Navigate](this.links[event.target.dataset.recordcount].location);</span>
+    }
+&nbsp;
+    constructPageRef(urlOrId) {
+        switch(this.navigationOptions) {
+            case "URL":
+                return {
+                    type: 'standard__webPage',
+                    attributes: {
+                        url: urlOrId
+                    }
+                };
+<span class="branch-1 cbranch-no" title="branch not covered" >            case "Salesforce File":</span>
+<span class="cstat-no" title="statement not covered" >                return {</span>
+                    type: 'standard__namedPage',
+                    attributes: {
+                        pageName: 'filePreview'
+                    },
+                    state : {
+                        recordIds: urlOrId
+                    }
+                };
+<span class="branch-2 cbranch-no" title="branch not covered" >            case "Record Page":</span>
+<span class="cstat-no" title="statement not covered" >                return {</span>
+                    type: 'standard__recordPage',
+                    attributes: {
+                        recordId: urlOrId,
+                        actionName: 'view'
+                    }
+                };
+<span class="branch-3 cbranch-no" title="branch not covered" >            default:</span>
+                //As these switch values are guaranteed, this should never happen
+<span class="cstat-no" title="statement not covered" >                return null;</span>
+        }
+    }
+&nbsp;
+    //Utility for checking setting lengths
+    linkLengthSettingsMatch(setting) {
+        return setting.length === this._linkSettingsCount;
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 30 2019 10:57:34 GMT+0800 (Australian Western Standard Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
