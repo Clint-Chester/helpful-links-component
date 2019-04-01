@@ -1,0 +1,25 @@
+{
+  "name": "sfdc-helpfullinks",
+  "version": "1.0.0",
+  "description": "A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "lwc-jest",
+    "test:unit:watch": "lwc-jest --watch",
+    "test:unit:debug": "lwc-jest --debug",
+    "test:unit:coverage": "lwc-jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clint-Chester/sfdc-helpfullinks.git"
+  },
+  "author": "Clint Chester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clint-Chester/sfdc-helpfullinks/issues"
+  },
+  "homepage": "https://github.com/Clint-Chester/sfdc-helpfullinks#readme",
+  "devDependencies": {
+    "@salesforce/lwc-jest": "^0.4.12"
+  }
+}

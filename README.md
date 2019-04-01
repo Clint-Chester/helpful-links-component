@@ -1,6 +1,8 @@
 # Helpful Links Component
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92e2923287564584bd216d591d10440e)](https://www.codacy.com/project/Clint-Chester/sfdc-helpfullinks/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Clint-Chester/sfdc-helpfullinks&amp;utm_campaign=Badge_Grade_Dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92e2923287564584bd216d591d10440e)](https://www.codacy.com/app/Clint-Chester/Helpful-Links-Component?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Clint-Chester/helpful-links-component&amp;utm_campaign=Badge_Grade)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/context:javascript)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/alerts/)
 
 A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages. I initially made this for my cricket club's Salesforce instance to help our users in finding contextual content in Salesforce and thought it would be useful to share!
 
