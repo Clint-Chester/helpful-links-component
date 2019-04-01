@@ -13,7 +13,7 @@ export const NavigationMixin = (Base) => {
         [GenerateUrl](pageReference) {
             return new Promise((resolve) => {
                 switch(pageReference.type) {
-                    case 'standard__webPage':
+                    case "standard__webPage":
                         resolve(pageReference.attributes.url);
                 }
             });

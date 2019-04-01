@@ -1,5 +1,5 @@
-import { LightningElement, api, track } from 'lwc';
-import { NavigationMixin } from 'lightning/navigation';
+import { LightningElement, api, track } from "lwc";
+import { NavigationMixin } from "lightning/navigation";
 
 export default class HelpfulLinks extends NavigationMixin(LightningElement) {
     //All of the settings that can be defined for the component
@@ -44,12 +44,12 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
 
     //Used to return an error back to the user
     errorOccurred = false;
-    errorMessage = '';
+    errorMessage = "";
 
     renderedCallback() {
         //With the DOM being rendered, check whether the lists should be chained
         if(this.chainLists) {
-            this.template.querySelector('div[data-id=linksList]').className = this.template.querySelector('div[data-id=linksList]').className + ' pull-up-margin';
+            this.template.querySelector("div[data-id=linksList]").className = this.template.querySelector("div[data-id=linksList]").className + " pull-up-margin";
         }
     }
 
@@ -71,7 +71,7 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
         else {
             //Set the error
             this.errorOccurred = true;
-            this.errorMessage = 'Please ensure that when you fill out the icons, titles, urls and descriptions that they all have the same amount of semi colons.';
+            this.errorMessage = "Please ensure that when you fill out the icons, titles, urls and descriptions that they all have the same amount of semi colons.";
         }
     }
 
@@ -88,14 +88,14 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
         switch(this.navigationOptions) {
             case "URL":
                 return {
-                    type: 'standard__webPage',
+                    type: "standard__webPage",
                     attributes: {
                         url: urlOrId
                     }
                 };
             case "Salesforce File":
                 return {
-                    type: 'standard__namedPage',
+                    type: "standard__namedPage",
                     attributes: {
                         pageName: 'filePreview'
                     },
@@ -105,10 +105,10 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
                 };
             case "Record Page":
                 return {
-                    type: 'standard__recordPage',
+                    type: "standard__recordPage",
                     attributes: {
                         recordId: urlOrId,
-                        actionName: 'view'
+                        actionName: "view"
                     }
                 };
             default:
