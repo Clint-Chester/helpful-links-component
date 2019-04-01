@@ -63,7 +63,7 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
                     "icon" : this.linkIcons.shift(),
                     "title" : this.linkTitles.shift(),
                     "location" : pageRef,
-                    "url" : this[NavigationMixin.GenerateUrl](pageRef).then(url => {this.links[i].url = url;}),
+                    "url" : this[NavigationMixin.GenerateUrl](pageRef).then((url) => {this.links[i].url = url;}),
                     "description" : this.linkDescriptions.shift()
                 });
             }
@@ -97,7 +97,7 @@ export default class HelpfulLinks extends NavigationMixin(LightningElement) {
                 return {
                     type: "standard__namedPage",
                     attributes: {
-                        pageName: 'filePreview'
+                        pageName: "filePreview"
                     },
                     state : {
                         recordIds: urlOrId
