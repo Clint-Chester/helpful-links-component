@@ -5,7 +5,7 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/alerts/)
 [![Known Vulnerabilities](https://snyk.io/test/github/Clint-Chester/helpful-links-component/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Clint-Chester/helpful-links-component?targetFile=package.json)
 
-A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages. I initially made this for my cricket club's Salesforce instance to help our users in finding contextual content in Salesforce and thought it would be useful to share!
+A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages. I initially made this for my cricket club's Salesforce instance to help our users in finding contextual content in Salesforce and thought it would be useful to share.
 
 [![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
 
