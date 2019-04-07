@@ -4,6 +4,7 @@
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/context:javascript)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/alerts/)
 [![Known Vulnerabilities](https://snyk.io/test/github/Clint-Chester/helpful-links-component/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Clint-Chester/helpful-links-component?targetFile=package.json)
+[![codecov](https://codecov.io/gh/Clint-Chester/helpful-links-component/branch/master/graph/badge.svg)](https://codecov.io/gh/Clint-Chester/helpful-links-component)
 
 A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages. I initially made this for my cricket club's Salesforce instance to help our users in finding contextual content in Salesforce and thought it would be useful to share.
 
