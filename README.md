@@ -3,7 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/92e2923287564584bd216d591d10440e)](https://www.codacy.com/app/Edgewater-Cricket-Club/Helpful-Links-Component?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=edgewatercricketclub/helpful-links-component&amp;utm_campaign=Badge_Grade)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/edgewatercricketclub/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edgewatercricketclub/helpful-links-component/context:javascript)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/edgewatercricketclub/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edgewatercricketclub/helpful-links-component/alerts/)
-[![codecov](https://codecov.io/gh/Clint-Chester/helpful-links-component/branch/master/graph/badge.svg)](https://codecov.io/gh/Clint-Chester/helpful-links-component)
+[![codecov](https://codecov.io/gh/edgewatercricketclub/helpful-links-component/branch/master/graph/badge.svg)](https://codecov.io/gh/edgewatercricketclub/helpful-links-component)
 
 A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages.
 
