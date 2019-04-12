@@ -11,6 +11,7 @@ A Salesforce Lightning Component that allows users to show useful links for user
 <img width="439" alt="Helpful Links Component" src="https://user-images.githubusercontent.com/12729644/55665966-7abd6e00-587a-11e9-8e2d-6353c6135e50.png">
 
 [![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
+[![Deploy Package](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0I000000f7RwQAI)
 
 <h2>Features</h2>
 The three types of content that can be populated in this component are:
