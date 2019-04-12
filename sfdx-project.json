@@ -1,11 +1,17 @@
 {
-  "packageDirectories": [
-    {
-      "path": "helpful-links",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "helpful-links",
+            "default": true,
+            "package": "Helpful Links Component",
+            "versionName": "Version 1.0",
+            "versionNumber": "1.0.0.NEXT"
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "45.0",
+    "packageAliases": {
+        "Helpful Links Component": "0Ho0I000000blMcSAI"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "45.0"
 }
