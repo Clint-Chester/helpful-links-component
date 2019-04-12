@@ -1,9 +1,8 @@
 # Helpful Links Component
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92e2923287564584bd216d591d10440e)](https://www.codacy.com/app/Clint-Chester/Helpful-Links-Component?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Clint-Chester/helpful-links-component&amp;utm_campaign=Badge_Grade)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/context:javascript)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Clint-Chester/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Clint-Chester/helpful-links-component/alerts/)
-[![Known Vulnerabilities](https://snyk.io/test/github/Clint-Chester/helpful-links-component/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Clint-Chester/helpful-links-component?targetFile=package.json)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92e2923287564584bd216d591d10440e)](https://www.codacy.com/app/Edgewater-Cricket-Club/Helpful-Links-Component?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=edgewatercricketclub/helpful-links-component&amp;utm_campaign=Badge_Grade)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/edgewatercricketclub/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edgewatercricketclub/helpful-links-component/context:javascript)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/edgewatercricketclub/helpful-links-component.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/edgewatercricketclub/helpful-links-component/alerts/)
 [![codecov](https://codecov.io/gh/Clint-Chester/helpful-links-component/branch/master/graph/badge.svg)](https://codecov.io/gh/Clint-Chester/helpful-links-component)
 
 A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages.
