@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/Clint-Chester/helpful-links-component#readme",
   "devDependencies": {
-    "@salesforce/lwc-jest": "^0.4.12"
+    "@salesforce/lwc-jest": "^0.4.14"
   }
 }
