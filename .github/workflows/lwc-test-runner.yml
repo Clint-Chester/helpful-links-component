@@ -19,9 +19,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: Install lwc-ject and dependencies
+    - name: Install lwc-jest and dependencies
       run: |
         npm install
-        npm install @salesforce/lwc-jest --save-dev
+        npm install @salesforce/sfdx-lwc-jest --save-dev
     - name: Run Unit Tests
       run: npm run test:unit
