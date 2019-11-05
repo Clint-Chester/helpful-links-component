@@ -4,14 +4,15 @@
             "path": "helpful-links",
             "default": true,
             "package": "Helpful Links Component",
-            "versionName": "Version 1.0",
-            "versionNumber": "1.0.0.NEXT"
+            "versionName": "Version 1.1",
+            "versionNumber": "1.1.0.NEXT"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "45.0",
+    "sourceApiVersion": "47.0",
     "packageAliases": {
-        "Helpful Links Component": "0Ho0I000000blMcSAI"
+        "Helpful Links Component": "0Ho0I000000blMcSAI",
+        "Helpful Links Component@1.1.0-1": "04t2y000000HCjKAAW"
     }
 }

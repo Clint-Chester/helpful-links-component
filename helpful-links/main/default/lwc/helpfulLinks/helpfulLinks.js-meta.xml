@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="helpfulLinks">
-    <apiVersion>45.0</apiVersion>
+    <apiVersion>47.0</apiVersion>
     <description>Used to create a configurable links list to open URLs, Salesforce Files and Salesforce Records.</description>
     <isExposed>true</isExposed>
     <masterLabel>Helpful Links</masterLabel>
@@ -8,9 +8,11 @@
         <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
         <target>lightning__RecordPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
     </targets>
     <targetConfigs>
-        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage,lightningCommunity__Default">
             <property name="title" label="Title" type="String" required="true" default="Helpful Links" description="The main title that will be displayed for the list of links." />
             <property name="navigationOptions" label="Navigation Options" type="String" required="true" datasource="URL,Salesforce File,Record Page" default="URL" description="Used to control whether your links are to hosted Salesforce Content, generic URLs or SObject records."/>
             <property name="linkIcons" label="Link Icons" type="String" required="true" default="doctype:pdf;doctype:flash" description="The Lightning Design System name of the icon. Names are written in the format '\utility:down\' where 'utility' is the category, and 'down' is the specific icon to be displayed. Icons can be found here - https://lightningdesignsystem.com/icons/"/>

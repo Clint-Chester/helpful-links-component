@@ -1,8 +1,7 @@
 {
   "name": "helpful-links-component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Salesforce Lightning Component that allows users to show useful links for users on Lightning pages",
-  "main": "index.js",
   "scripts": {
     "test:unit": "lwc-jest",
     "test:unit:watch": "lwc-jest --watch",
@@ -20,6 +19,6 @@
   },
   "homepage": "https://github.com/Clint-Chester/helpful-links-component#readme",
   "devDependencies": {
-    "@salesforce/lwc-jest": "^0.4.14"
+    "@salesforce/sfdx-lwc-jest": "^0.6.1"
   }
 }
