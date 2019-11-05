@@ -4,7 +4,6 @@ import { createElement } from "lwc";
 import helpfulLinks from "c/helpfulLinks";
 // Mock the navigation mixin
 import { CurrentPageReference } from "lightning/navigation";
-jest.mock("lightning/navigation");
 
 // Construct the common components of the Helpful Links
 let element;
