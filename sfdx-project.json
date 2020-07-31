@@ -10,7 +10,7 @@
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "47.0",
+    "sourceApiVersion": "49.0",
     "packageAliases": {
         "Helpful Links Component": "0Ho0I000000blMcSAI",
         "Helpful Links Component@1.1.0-1": "04t2y000000HCjKAAW"
