@@ -10,13 +10,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_and_test:
-
+  report-lwc-code-coverage:
+    name: Report LWC Code Coverage
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Install lwc-jest
-      run: npm install @salesforce/sfdx-lwc-jest@0.9.2 --save-dev
-    - name: Run Unit Tests
-      run: npm run test:unit
+      - name: Checkout Repository
+        uses: actions/checkout@v2.3.4
+      - name: Report LWC Code Coverage
+        run: |
+          LWC_JEST_VERSION="$(cat package.json | jq --raw-output '.devDependencies ."@salesforce/sfdx-lwc-jest"')"
+          npm install @salesforce/sfdx-lwc-jest@$LWC_JEST_VERSION --save-dev
+          npm run test:unit:coverage
+      - name: Upload code coverage for LWC to Codecov.io
+        uses: codecov/codecov-action@v1.5.0
+        with:
+          flags: LWC
+          token: ${{ secrets.CODECOV_TOKEN }}
