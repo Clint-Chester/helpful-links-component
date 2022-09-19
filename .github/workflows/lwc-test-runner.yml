@@ -22,7 +22,7 @@ jobs:
           npm install @salesforce/sfdx-lwc-jest@$LWC_JEST_VERSION --save-dev
           npm run test:unit:coverage
       - name: Upload code coverage for LWC to Codecov.io
-        uses: codecov/codecov-action@v2.0.2
+        uses: codecov/codecov-action@v3.1.1
         with:
           flags: LWC
           token: ${{ secrets.CODECOV_TOKEN }}
