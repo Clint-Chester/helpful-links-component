@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Clint-Chester/helpful-links-component#readme",
   "devDependencies": {
-    "@salesforce/sfdx-lwc-jest": "^1.0.1"
+    "@salesforce/sfdx-lwc-jest": "^1.2.1"
   }
 }
