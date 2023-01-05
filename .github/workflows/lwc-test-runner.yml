@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3.3.0
       - name: Report LWC Code Coverage
         run: |
           LWC_JEST_VERSION="$(cat package.json | jq --raw-output '.devDependencies ."@salesforce/sfdx-lwc-jest"')"
